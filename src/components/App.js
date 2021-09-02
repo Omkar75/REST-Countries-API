@@ -9,11 +9,7 @@ import NotFound from "./NotFoundPage/NotFound";
 class App extends Component {
   constructor(props) {
     super(props);
-    //determine the homepage path based on the development mode
-    this.homePage =
-      process.env.NODE_ENV === "development"
-        ? "/"
-        : "/REST-Countries-API-with-color-theme-switcher/";
+    this.homePage = "/";
   }
   state = {
     darkMode: true,
